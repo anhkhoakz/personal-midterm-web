@@ -1,5 +1,8 @@
 const header = document.querySelector(".navbar");
-console.log(header);
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarSupportedContent");
+const toggleButton = document.getElementById("toggleButton");
+
 window.onscroll = function () {
     const top = window.scrollY;
     if (top >= 100) {
@@ -9,24 +12,13 @@ window.onscroll = function () {
     }
 };
 
-const navLinks = document.querySelectorAll(".nav-item");
-const menuToggle = document.getElementById("navbarSupportedContent");
-
 navLinks.forEach((l) => {
     l.addEventListener("click", () => {
         new bootstrap.Collapse(menuToggle).toggle();
     });
 });
 
-// window.addEventListener("beforeunload", function (e) {
-//     e.preventDefault();
-//     e.returnValue = "";
-//     return "Are you sure you want to leave this page?";
-// });
-
-const toggleButton = document.getElementById("toggleButton");
 let isExpanded = false;
-
 toggleButton.addEventListener("click", function () {
     if (isExpanded) {
         toggleButton.textContent = "Show More";
