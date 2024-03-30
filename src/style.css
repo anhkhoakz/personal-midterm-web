@@ -113,3 +113,7 @@
 .navbar-custom .container {
     font-size: 1.5em;
 }
+
+.link-primary {
+    text-decoration: none;
+}

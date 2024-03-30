@@ -15,6 +15,8 @@
         crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="src/imgs/favicon.svg">
+
 </head>
 
 <body>
@@ -71,7 +73,8 @@
 
                     <p class="d-inline-flex gap-1">
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#more-information" aria-expanded="false" aria-controls="more-information">
+                            data-bs-target="#more-information" aria-expanded="false" aria-controls="more-information"
+                            id="toggleButton">
                             Show more
                         </button>
                     </p>
@@ -168,12 +171,20 @@
     <!-- footer section-->
     <footer class="bg-body-tertiary text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            Made by Khoa Nguyen under <a href="LICENSE.html" class="link-primary" rel="license noopener">GNU GPLv3</a>
+            Made by Khoa Nguyen under <a href="LICENSE.html" class="link-primary" rel="license noopener">GNU
+                GPLv3</a>
         </div>
     </footer>
 
     <!-- load javascript after loading all html content -->
     <script src="src/script/script.js"></script>
+    <script>
+        window.addEventListener("beforeunload", function (e) {
+            e.preventDefault();
+            e.returnValue = "";
+            return "Are you sure you want to leave this page?";
+        });
+    </script>
 
 </body>
 
