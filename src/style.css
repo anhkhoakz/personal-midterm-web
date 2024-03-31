@@ -20,11 +20,11 @@
 }
 
 .hero_title {
-    font-size: 4.5rem;
+    font-size: 4.5em;
 }
 
 .hero_desc {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .hero-text {
@@ -37,7 +37,7 @@
 }
 
 #contact {
-    padding-bottom: 4rem;
+    padding-bottom: 4em;
 }
 
 .imageAboutPage {
@@ -90,10 +90,12 @@
     color: white;
 }
 
-#footer {
-    background-color: black;
-    color: white;
-    text-align: center;
+.navbarLogo {
+    padding-top: 1.25em;
+}
+
+.navbarItem {
+    padding-top: 1.25em;
 }
 
 .nav-item:hover {
@@ -116,4 +118,226 @@
 
 .link-primary {
     text-decoration: none;
+}
+
+.container,
+container-fluid {
+    width: 100%;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure navbar is on top of other content */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-item {
+    list-style: none; /* Remove bullet points */
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between nav items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Change this to your desired text color */
+    transition: color 0.3s ease; /* Add transition for smoother color change */
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Change this to your desired hover color */
+}
+
+.navbar-brand {
+    padding-top: 0.5em;
+    padding-bottom: 0.3125em;
+    margin-right: 1em;
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-toggler {
+    padding: 0.25em 0.75em;
+    font-size: 1.25em;
+    line-height: 1;
+    color: rgba(0 0 0, 0.65);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.375em;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+button {
+    border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1.5em;
+    margin-right: 0;
+    margin-left: 0;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.mt-3 {
+    margin-top: 1em;
+}
+
+.mt-4 {
+    margin-top: 1.5em;
+}
+
+.mb-3 {
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: auto;
+    color: inherit;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0.375em;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1em 1em;
+    color: #212529;
+}
+.card-title {
+    margin-bottom: 0.5em;
+    color: #212529;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375em;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.375em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    background-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    color: black;
+    background-color: #76abae;
+}
+
+.footer {
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    height: auto;
+    word-wrap: break-word;
+    background-color: 0 0 0 0.05;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0.375em;
+    text-align: center;
+    padding: 1em;
 }
